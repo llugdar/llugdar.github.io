@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+     <!--<link rel="stylesheet" type="text/css" href="theme.css"> -->
+     <!--<link rel="stylesheet" type="text/css" href="theme2.css"> -->
+     <!--<link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <link rel="stylesheet" type="text/css" href="theme4.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    
+    <!-- use this style for testing and development purposes -->
+    <!--<style type="text/css">
+    .container{border: 2px dotted green;}
+    .row{border: 1px dotted red;}
+    .row [class*=' col-']{border: 2px dotted purple;}
+    </style>-->
+    
+    <link rel="stylesheet" href="mycss.css">
+
+</head>
+<body>
+
+<!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+<nav class="navbar navbar-default navbar-fixed-top">
+<!--<nav class="navbar navbar-default">-->
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- hamburger button. do not touch! -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+      <a class="navbar-brand" href="#">
+          <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+          <i class="fa fa-home"></i>
+          <!--<img src="https://cdn0.iconfinder.com/data/icons/star-wars/512/r2d2-512.png"-->
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- THIS UL HANDLES OUR LINKS -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://facebook.com">facebook</a></li>
+        <li><a href="http://facebook.com">twitter</a></li>
+        <li><a href="http://facebook.com">pinterest</a></li>
+        <li><a href="http://facebook.com">instagram</a></li>
+        <li><a href="http://facebook.com">youtube</a></li>
+        <li><a href="http://facebook.com">vimeo</a></li>
+
+        <!-- to make more links, make some <li> in here -->
+      </ul>
+
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="http://facebook.com">login</a></li>
+        <li><a href="http://facebook.com">sign up</a></li>
+
+        
+        <!-- to make more links, make some <li> in here -->
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+    <!--This container is to hold everything...(Here start)-->
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <div class="jumbotron" style="background-image: url(https://cdn1.touringplans.com/assets/parks/mk/default-ccff488d9887c4d08c75e52d49bca335.jpg); background-size: cover; background-position: center">
+            <!--<div class="jumbotron">-->
+    
+                <h1 class="wow lightSpeedIn text-white">The Magic Kingdom</h1>
+                <p class="wow lightSpeedIn text-white">This is the place where the magic happens...</p>
+                <!--<button class="btn btn-primary">Click me</button>-->
+                <a href="http://stackup.sg" class="btn btn-primary">Click me</a>
+                <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>-->
+            </div>
+
+        </div>
+    </div>
+
+<!--Start row 2-->
+    <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="thumbnail">
+                  <img src="http://vignette2.wikia.nocookie.net/disney/images/8/8a/Cars_Characters_28_Red.jpg/revision/latest/scale-to-width-down/800?cb=20150806191155">
+                    <div class="caption">
+                        <h3> I'm Red</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quod, animi maxime, adipisci saepe tempora architecto vitae. Dolorum, repellat reiciendis tenetur esse. Molestias assumenda optio numquam et error vel excepturi.
+                            </p>
+                    </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="thumbnail">
+                  <img src="http://vignette3.wikia.nocookie.net/pixarcars/images/2/22/Fred-2-Pixar-Cars-Wallpaper-1-.jpg/revision/latest/scale-to-width-down/800?cb=20110818144344">
+                    <div class="caption">
+                        <h3> I'm Fred</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quod, animi maxime, adipisci saepe tempora architecto vitae. Dolorum, repellat reiciendis tenetur esse. Molestias assumenda optio numquam et error vel excepturi.
+                            </p>
+                    </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="thumbnail">
+                  <img src="http://vignette2.wikia.nocookie.net/pixar/images/c/cd/Ramone-2-Pixar-Cars-Wallpaper.jpg/revision/latest/scale-to-width-down/800?cb=20110518013234">
+                    <div class="caption">
+                        <h3> I'm Ramone</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quod, animi maxime, adipisci saepe tempora architecto vitae. Dolorum, repellat reiciendis tenetur esse. Molestias assumenda optio numquam et error vel excepturi.
+                            </p>
+                    </div>
+              </div>
+          </div>
+    </div>
+<!--Finish row 2-->
+<!--Start row 3-->
+    <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                 src="https://www.youtube.com/embed/h3RYTbJr07M"></iframe>
+            </div>
+          </div>
+    </div>
+<!--Finish row 3-->
+<hr>
+<!--Start Row 4-->
+<div class="row">
+ <!--Form-->      
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                   <form action="https://coderinyou-1332.appspot.com/submit" method="post">
+                       <legend>Sign Up </legend>
+
+                       <div class="form-group">
+                            <label for="name-id">Name</label>
+                            <input id="name-id" class="form-control" type="text" name="NAME" placeholder="Walt Disney">
+                       </div>
+                       <div class="form-group">
+                            <label for="email-id">e-Mail</label>
+                            <input id="email-id" class="form-control" type="email" name="e-Mail" placeholder="walt@disney.com">
+                       </div>
+                       <div class="radio">
+                       <label>
+                            <input type="radio" name="gender" value="male"> Male 
+                       </label>
+                       </div>
+                       <div class="radio">
+                        <label>
+                        <input type="radio" name="gender" value="female"> Female
+                        </label>
+
+                       </div>
+                       <input type="submit" class="btn btn-primary">
+
+                   </form>
+                </div>
+            </div>
+
+        </div>
+ <!--Text-->       
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="caption">
+                <h3 class="text-center"> BLA BLA BLA BLA BLA</h3>
+
+                <hr>
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quod, animi maxime, adipisci saepe tempora architecto vitae. Dolorum, repellat reiciendis tenetur esse. Molestias assumenda optio numquam et error vel excepturi.
+                    </p>
+            </div>
+
+        </div>
+</div>
+ <!--Start Row 5-->    
+    <div class="row">
+        <!--table-->
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h3 class="text-center">Opening Hours</h3>
+            <table class="table wow fadeInLeft" class="table table-striped">
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+                 <tr>
+                    <td>Monday to Friday</td>
+                    <td>9am - 5pm</td>
+                </tr>
+                 <tr>
+                    <td>Saturday</td>
+                    <td>9am - 11pm</td>
+                </tr>
+                 <tr>
+                    <td>Sunday and Public Holidays</td>
+                    <td>Open :)</td>
+                </tr>
+            </table>
+
+        </div>
+         <!--Map-->
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7945094339248!2d103.7852754505082!3d1.298016562096287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a4fe45692e5%3A0xc90d9ee9e29fd8c2!2s79+Ayer+Rajah+Crescent%2C+Block+79%2C+Singapore+139955!5e0!3m2!1sen!2ssg!4v1492591399577"></iframe>
+            </div>
+        </div>
+         <!--Contact list-->
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h3 class="text-center">Contact me</h3>
+                <ul class="list-group">
+                        <a href="http://google.com" target="_blank" class="list-group-item">
+                            <i class="fa fa-home fa-fw"></i> Home
+                        </a>                        
+                        <a href="tel:+6598765432" class="list-group-item">
+                            <i class="fa fa-phone fa-fw"></i> +65 9876 5432
+                        </a>
+                        <a href="mailto:walt@disney.com" class="list-group-item">
+                            <i class="fa fa-envelope fa-fw"></i> walt@disney.com
+                        </a>
+                        <a href="https://web.telegram.org/" target="_blank" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i> t.me/walt
+                        </a>
+                </ul>
+        </div>
+    </div>
+
+    <hr>
+ <!--Start Row 6-->    
+    <div class="row">
+        <!--Social media-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <ul class="list-inline text-center">
+                <li>
+                    <a href="http:facebook.com" target="_blank">
+                        <i class="fa fa-facebook fa-3x"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http:instagram.com" target="_blank">
+                        <i class="fa fa-instagram fa-3x"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http:twitter.com" target="_blank">
+                        <i class="fa fa-twitter fa-3x"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http:pinterest.com" target="_blank">
+                        <i class="fa fa-pinterest fa-3x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+<!--</div> And here it closes...-->
+</div>
+
+ 
+
+<!-- jquery -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+<script>new WOW().init();</script>
+</body>
+</html>
